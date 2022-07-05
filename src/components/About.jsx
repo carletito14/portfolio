@@ -1,23 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div name='about' className='w-full h-screen bg-[#023047] text-gray-300'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
             <p className='text-4xl font-bold inline border-b-4 border-yellow-200'>
-              About
+              {t("about.title")}
             </p>
           </div>
           <div></div>
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
-            <p>Hi. I'm Manuel, nice to meet you. Here is part of my story as a developer.</p>
+            <p>{t("about.left-content")}</p>
           </div>
           <div>
-            <p>I help businesses get more customers, I give them visibility on the internet, I create quality content for them through mobile and web development. What would you do if you could implement a development in your business?</p>
+          <p>{t("about.right-content")}</p>
           </div>
         </div>
       </div>

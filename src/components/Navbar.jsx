@@ -6,45 +6,58 @@ import {
     FaGithub,
     FaLinkedin,
 } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import { HiOutlineMail } from 'react-icons/hi';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
+import en_flag from "../assets/en.png";
+import es_flag from "../assets/es.png";
 
 const Navbar = () => {
+    const [t, i18n] = useTranslation("global");
+
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#023047] text-gray-300'>
-            <div>
-                <img src={Logo} alt='Logo Image' style={{ width: '50px' }} />
+
+            <div className='flex'>
+                <div className='flex flex-initial'>
+                    <img className='w-9 h-9' src={en_flag} alt="en_flag" role="button" onClick={() => i18n.changeLanguage("en")} />
+                    <img className='w-9 h-9' src={es_flag} alt="en_flag" role="button" onClick={() => i18n.changeLanguage("es")} />
+                </div>
+            </div>
+            <div className='flex'>
+                <img src={Logo} alt='Logo Image' style={{ width: '50px' }} className='text-center' />
+
             </div>
 
             {/* menu */}
             <ul className='hidden md:flex'>
                 <li>
                     <Link to='home' smooth={true} duration={500}>
-                        Home
+                        {t("navbar.home")}
                     </Link>
                 </li>
                 <li>
                     <Link to='about' smooth={true} duration={500}>
-                        About
+                        {t("navbar.about")}
                     </Link>
                 </li>
                 <li>
                     <Link to='skills' smooth={true} duration={500}>
-                        Skills
+                        {t("navbar.skills")}
                     </Link>
                 </li>
                 <li>
                     <Link to='work' smooth={true} duration={500}>
-                        Work
+                        {t("navbar.work")}
                     </Link>
                 </li>
                 <li>
                     <Link to='contact' smooth={true} duration={500}>
-                        Contact
+                        {t("navbar.contact")}
                     </Link>
                 </li>
             </ul>

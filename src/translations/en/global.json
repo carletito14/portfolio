@@ -1,0 +1,39 @@
+{
+    "header": {
+        "small-title": "Hi, my name is",
+        "title": "Manuel Gutierrez",
+        "subtitle": "I'm a FrontEnd Developer.",
+        "title-description": "I am that kind of 'problem solver' person to give you just what you are looking for",
+        "button-work": "View work"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "work": "Work",
+        "contact": "Contact"
+    },
+    "about": {
+        "title": "About",
+        "left-content": "Hi. I'm Manuel, nice to meet you. Here is part of my story as a developer.",
+        "right-content": "I help businesses get more customers, I give them visibility on the internet, I create quality content for them through mobile and web development. What would you do if you could implement a development in your business?"
+    },
+    "skills": {
+        "title": "Skills",
+        "content": "These are the technologies I've worked with"
+    },
+    "work": {
+        "title": "Work & Clients",
+        "content": "Check out recent clients that I've worked with"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Submit the form below or drop me an email",
+        "collaborate-button": "Let's Collaborate",
+        "form":{
+            "name": "Name",
+            "email":"Email",
+            "message":"Message"
+        }
+    }
+}

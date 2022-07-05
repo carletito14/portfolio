@@ -1,0 +1,39 @@
+{
+    "header": {
+        "small-title": "Hola, mi nombre es",
+        "title": "Manuel Gutiérrez",
+        "subtitle": "Soy un desarrollador de Front End.",
+        "title-description": "Soy ese tipo de persona que 'soluciona problemas' para darte justo lo que estás buscando.",
+        "button-work": "Ver trabajo"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Skills",
+        "work": "Trabajos",
+        "contact": "Contacto"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "left-content": "Hola. Soy Manuel, encantado de conocerte. Esta es parte de mi historia como desarrollador.",
+        "right-content": "Ayudo a las empresas a obtener más clientes, les doy visibilidad en Internet, creo contenido de calidad para ellos a través del desarrollo web y móvil. ¿Qué harías si pudieras implementar un desarrollo en tu negocio?"
+    },
+    "skills": {
+        "title": "Skills",
+        "content": "Estas son las tecnologías con las que he trabajado"
+    },
+    "work": {
+        "title": "Trabajo & Clientes",
+        "content": "Echa un vistazo a los clientes recientes con los que he trabajado"
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "Rellena el siguiente formulario o envíame un correo electrónico",
+        "collaborate-button": "¡Colaboremos!",
+        "form":{
+            "name": "Nombre",
+            "email":"Email",
+            "message":"Mensaje"
+        }
+    }
+}
