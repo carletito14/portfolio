@@ -1,14 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import ReactImg from '../assets/react.png';
-import Node from '../assets/node.png';
-import AWS from '../assets/aws.png';
-import GitHub from '../assets/github.png';
-import Firebase from '../assets/firebase.png'
 import { skills } from '../data/data';
 
 const Skills = () => {

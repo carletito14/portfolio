@@ -4,6 +4,8 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Home = () => {
   const [t] = useTranslation("global");
+  const woman = '👩‍💻'
+
   return (
     <div name='home' className='w-full h-screen bg-[#023047]'>
       {/* Container */}
@@ -16,7 +18,6 @@ const Home = () => {
           {t("header.subtitle")}
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>{t("header.title-description")}
-
         </p>
         <div>
           <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-200'>
