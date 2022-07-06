@@ -9,9 +9,20 @@ import Node from '../assets/node.png';
 import AWS from '../assets/aws.png';
 import GitHub from '../assets/github.png';
 import Firebase from '../assets/firebase.png'
+import { skills } from '../data/data';
 
 const Skills = () => {
     const [t] = useTranslation("global");
+    const skillsData = skills.map(function (skill) {
+        return (
+
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className='w-20 mx-auto' src={skill.img} alt="HTML icon" />
+                <p className='my-4'>{skill.name.toUpperCase()}</p>
+            </div>
+        );
+
+    });
 
     return (
         <div name='skills' className='w-full h-screen bg-[#023047] text-gray-300'>
@@ -21,40 +32,8 @@ const Skills = () => {
                     <p className='text-4xl font-bold inline border-b-4 border-yellow-200 '>{t("skills.title")}</p>
                     <p className='py-4'>// {t("skills.content")}</p>
                 </div>
-
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-                        <p className='my-4'>HTML</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
-                        <p className='my-4'>CSS</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
-                        <p className='my-4'>JAVASCRIPT</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
-                        <p className='my-4'>REACT</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={Node} alt="HTML icon" />
-                        <p className='my-4'>NODE JS</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={GitHub} alt="HTML icon" />
-                        <p className='my-4'>GITHUB</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={Firebase} alt="HTML icon" />
-                        <p className='my-4'>Firebase</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <img className='w-20 mx-auto' src={AWS} alt="HTML icon" />
-                        <p className='my-4'>AWS</p>
-                    </div>
+                    {skillsData}
                 </div>
             </div>
         </div>
