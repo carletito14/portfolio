@@ -4,7 +4,6 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Home = () => {
   const [t] = useTranslation("global");
-  const woman = '👩‍💻'
 
   return (
     <div name='home' className='w-full h-screen bg-[#023047]'>
